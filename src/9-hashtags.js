@@ -1,3 +1,4 @@
 export const hashtags = (text) => {
-  return text
+  const textArray = text.split(" ")
+  return textArray.filter(hashtag => hashtag.includes("#"))
 }
